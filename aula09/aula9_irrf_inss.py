@@ -15,37 +15,15 @@
 #--- Base - http://www.calculador.com.br/calculo/salario-liquido
 
 
-# def calculo_inss(salario):
+from class09.imposto import calculo_inss, calculo_irrf
 
-#     if (salario > 0 and salario <= 1751.81):
-#         inss = salario * 0.08
-#     elif salario > 1751.81 and salario <= 2919.72:
-#         inss = salario * 0.095
-#     elif salario > 2919.72 and  salario <= 5839.45:
-#         inss = salario * 0.11
-#     else:
-#         inss = 642.34
-#     return inss
+salario = float(input('Digite seu salário: '))
 
-# def calculo_irrf(salario,inss):
-    
-#     if (salario > 1903.98 and salario <= 2826.65):
-#         irrf = ((salario - inss)-142.90) * 0.075
-#     elif salario > 2826.66 and salario <= 3751.05:
-#         irrf = ((salario - inss)-354.80) * 0.15
-#     elif salario > 3751.05 and  salario <= 4664.68:
-#         irrf = ((salario - inss)-636.13) * 0.225
-#     elif salario > 4664.68:
-#         irrf = ((salario - inss)-869.36) * 0.275
-#     return irrf
+inss = calculo_inss(salario)
 
-# salario = float(input('Digite seu salário: '))
+irrf = calculo_irrf(salario,inss)
 
-# inss = calculo_inss(salario)
-
-# irrf = calculo_irrf(salario,inss)
-
-# salario_liq = salario - inss - irrf
+salario_liq = salario - inss - irrf
 
 # nome = input('Digite seu nome: ')
 # cpf = input('Digite seu CPF: ')
@@ -53,7 +31,6 @@
 # cargo = input('Digite o cargo: ')
 
 
+salario_liq = salario - inss - irrf
 
-# salario_liq = salario - inss - irrf
-
-# print(f'Seu salário é {salario_liq}')
+print(f'Seu salário é {salario_liq}')
