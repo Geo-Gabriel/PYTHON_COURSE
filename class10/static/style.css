@@ -1,0 +1,20 @@
+h1 {
+    color: aqua;
+    background-color: blue;
+    right: 50px;
+    border-style: dashed;
+
+}
+
+
+body {
+    background-color: rgb(73, 54, 179);
+    width: 500px;
+    height: 500px;
+}
+
+form {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-style: groove;
+}
