@@ -31,3 +31,4 @@ def ler ():
 
 for pessoas in ler():
     print(f"{pessoas['nome']} - {pessoas['sobrenome']} - {pessoas ['idade']}")
+    

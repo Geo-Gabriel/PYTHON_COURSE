@@ -1,1 +1,2 @@
 cerveja;skol;10;pilsen
+cerveja;schin;50;pilsen
