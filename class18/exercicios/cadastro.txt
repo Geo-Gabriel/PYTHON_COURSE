@@ -1,0 +1,20 @@
+1;fernanda de almeida;f;18
+2;pedro pedroca;m;17
+3;joana francisca;f;16
+4;paola silva;f;19
+5;carlao;m;25
+6;pedro guerra;m;35
+7;maria ferraz;f;15
+8;pablo frerras;m;19
+9;maiara;f;26
+10;carla;f;30
+11;carlos;m;15
+12;paulo pablo;m;28
+13;luana maria;f;35
+14;joaquina;f;15
+15;romario;m;50
+16;ronaldo;f;30
+17;heloisa;f;10
+18;helia;f;45
+19;lucas;m;34
+20;gabriel;m;17
