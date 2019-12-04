@@ -1,0 +1,7 @@
+1;fernanda de almeida;f;18
+4;paola silva;f;19
+9;maiara;f;26
+10;carla;f;30
+13;luana maria;f;35
+16;ronaldo;f;30
+18;helia;f;45

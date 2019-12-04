@@ -1,4 +1,4 @@
-# Aula 18 - 03-11-2019
+# Aula 18 - 03-12-2019
 
 # Ao receber a seguinte lista, faça um metodo que retorne cada um destes itens de forma individual 
 # com cabaçalho dizendo em que posição estes itens estão dentro da lista principal:
@@ -24,22 +24,16 @@ lista = [
           ['calça','camisa','japona','jaqueta','camiseta','bone','regata']
         ]
 
-# i = 0
-# for lista_peq in lista:
-#   print(f'################### POSICAO {i} ##################')
-#   i = i + 1
 
-#   for dados in lista:
-#   #  n = 0
-#     print(dados[i])
-  
-i = 0
+def lista_iten(lista):
+  numero = 0
+  for lista_pequena in lista:
+    print(f"############# Posição: {numero} ################")
+    numero = numero +1
+    for abioluz in lista_pequena:
+      print(abioluz)
+      for i in abioluz:
+        print(i)
 
-for lista_peq in lista:
-  i += 1
-  print(f'##################### POS {i} ######################')
 
-  for i in lista_peq:
-    print(i)
-    # for b in i:
-    #   print(b)
+lista_iten(lista)
