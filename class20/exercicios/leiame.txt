@@ -1,0 +1,8 @@
+Passar mais manupulação de lista.
+
+reforçar metodos de lista append, insert, count, pop....
+
+Manipulação de lista com dicionario
+
+Tratamento de dados e manipulação de dados.
+

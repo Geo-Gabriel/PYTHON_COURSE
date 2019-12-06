@@ -5,7 +5,7 @@
 # Na hora de fazer este exercicio, atentar para 
 
 # Com o arquivo de cadastro.txt onde possui os seguintes dados: codigo cliente, nome, idade, sexo, e-mail e telefone
-# 1 - Crie um metodo que gere e retorne uma lista com bibliotecas com os dados dos clientes
+# 1 - Crie um metodo que gere e retorne uma lista com dicionarios com os dados dos clientes
 # 2 - Com a lista do exercicio 1, separe os adultos dos menores de idade e salve em um arquivo .txt cada.
 # Esta função tambem retornar uma lista com a biblioteca dos maiores de idades.
 # 3 - Crie uma função que conte quantas mulheres e quantos homens tem na lista. Salve cada um em um arquivo diferente.
@@ -25,3 +25,25 @@
 #      Lembre-se: É importante que apareça a frase. Pois a mesma será encaminhada por e-mail pela equipe de marketing
 
 
+arq = open('cadastro.txt', 'r')
+
+lista = []
+
+for pessoa in arq:
+    pessoa = pessoa.strip().split(';')
+    dicio = {'codigo': pessoa[0], 'nome': pessoa[1], 'idade': pessoa[2], 'sexo': pessoa[3], 'email': pessoa[4], 'telefone': pessoa[5],}
+    lista.append(dicio)
+arq.close()
+
+print(lista)
+
+
+
+# def lista_clientes (clientes):
+#     lista_clientes = []
+#     for clientes in arquivo:
+#         dicio_clientes = {'dados': clientes}
+#         lista_clientes.append(dicio_clientes)
+#     return lista_clientes
+
+# print(lista_clientes(arquivo))
