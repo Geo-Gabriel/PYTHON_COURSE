@@ -11,3 +11,5 @@ Learn more or give us feedback
 # Ao finalizar, obrigar o fechamento do arquivo
 
 # dica: linha 204 do arquivo execoes.py
+
+
