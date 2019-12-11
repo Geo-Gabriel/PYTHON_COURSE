@@ -1,0 +1,18 @@
+Módulo 1 - Função Print - 1
+
+Função print() em Python serve para impressão de dados em formato texto no console.
+Exemplo de impressão de texto simples em Python:
+    print('HBSIS / AMBEV')
+Para impressão de textos em Python podemos fazê-lo entre aspas duplas ou aspas simples, como no exemplo acima.
+Por convenção é utilizado as aspas simples, mas a utilização das aspas duplas não modifica o resultado.
+Para a impressão de números não é necessário o uso das aspas pois a função print converte automaticamente para texto.
+
+Podemos imprimir várias informações diferentes em uma única instrução print usando a vírgula para separar as informações como
+no exemplo a seguir:
+    print('Olá ','Meu nome é ','João ', 'eu tenho ', 19, 'anos')
+
+Existem conjuntos de caracteres que possuem uma função especial dentro de um texto. Estes conjuntos são representados pela
+juncão de caracteres com o caracter de escape representado pela barra invertida '\' 
+Exemplos destes caracteres:
+ \n = Representam uma quebra de linha. Faz com que o texto digitado após ele seja impresso na próxima linha
+ \t = Representam uma tabulação. Faz com que o texto digitado após ele seja impresso após um espaço em branco

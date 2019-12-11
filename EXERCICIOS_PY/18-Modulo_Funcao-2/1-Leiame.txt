@@ -1,0 +1,40 @@
+Módulo 18 - Funções - 2
+
+Dando continuidade ao estudo das funções iniciado no módulo 16, neste serão apresentados alguns conceitos essenciais para o 
+bom uso das funções. Uma situação bastante comum que ocorre durante o uso de funções é de precisarmos fornecer uma informação 
+para a função. Em muitos casos os comandos que adicionamos dentro de uma função precisam de um dado que foi gerado fora desta 
+função ou até mesmo foi gerado por outra função. A seguir um exemplo deste cenário:
+    def soma():
+        resultado = n1 + n2
+        print(f'O resultado da soma é {resultado}')
+
+    n1 = int(input('Digite um número: '))
+    n2 = int(input('Digite outro número: '))
+    soma()
+No exemplo acima o código irá funcionar de forma adequada, porém temos uma dependência entre a variável criada no momento em 
+que lemos os números informados pelo usuário e seu uso na função. O problema desta abordagem é que se caso precisássemos alterar
+o nome da variável no momento da leitura, teremos que alterar o nome da variável também dentro da função. Também existe a 
+possibilidade de um programador escrever apenas a função que realiza o cálculo e outro programador fazer a leitura dos dados e a 
+chamada desta função, este segundo deveria seguir o mesmo nome das variáveis criadas pelo primeiro programador para evitar 
+problemas. Outro problema é que funções podem ser escritas em arquivos separados e neste caso a variável não seria reconhecida 
+pela função. 
+Para evitarmos estes problemas podemos definir durante a criação da função quais dados precisaremos para que a 
+sequência de comandos dentro da função seja executada de forma correta. Esta definição dos dados que a função precisa 
+deve ser informado dentro dos parênteses que seguem o nome da nossa função. A seguir um exemplo desta abordagem:
+    def soma(numero1, numero2):
+        resultado = numero1 + numero2
+        print(f'O resultado da soma é {resultado}')
+    n1 = int(input('Digite um número: '))
+    n2 = int(input('Digite outro número: '))
+    soma(n1, n2)
+Neste exemplo foi utilizado o código do primeiro exemplo, mas alterado a função, informando quais dados ela precisaria para 
+ser executada. Neste caso foi definido que seria o 'numero1' e o 'numero2', a partir disto quando a função for chamada deve 
+ser enviado para ela dois dados, como foi feito na última linha do exemplo. Perceba que os identificadores das variáveis 
+passadas durante a chamada da função são diferentes dos identificadores das variáveis da função. Tal abordagem não gera 
+nenhum problema pois cada variável é independente, as variáveis 'n1' e 'n2' existem em todos o programa, já as variáveis 
+'numero1' e 'numero2' só existem dentro da função, quando a última linha da função é executada (print(f'O resultado da soma é {resultado}'))
+as variáveis 'numero1' e 'numero2' deixaram de existir, caso tente utilizá-las fora da função ocasionará um erro. O que ocorre 
+entre as variáveis 'n1', 'n2', 'numero1' e 'numero2' é que o Python faz uma cópia do conteúdo da variável 'n1' para a variável 'numero1' e 
+uma cópia do conteúdo da variável 'n2', para a variável 'numero2'. Estas cópias ocorrem de acordo com a posição de cada uma, pois
+a variável 'numero1' está na primeira posição na declaração da função e durante a chamada da função, na primeira posição foi passada a 
+variável 'n1'

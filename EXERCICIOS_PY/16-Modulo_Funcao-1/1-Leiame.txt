@@ -1,0 +1,29 @@
+{% comment %} Módulo 16 - Funções - 1
+
+Funções são subrotinas que podem ser utilizadas em programas. Cada função deve executar uma sequência de comandos
+com objetivo de realizar uma tarefa específica. A criação de função em Python deve conter a palavra reservada 'def'
+seguido pelo nome dado a função juntamente com um par de parênteses, para finalizar deve-se acrescentar dois pontos
+':', após este conjunto de instruções podemos acrescentar abaixo a sequência de comandos, porém para que o Python 
+identifique que esta sequência de comandos pertence a nossa função eles devem ser escritos com em recuo de 4 espaços
+ou espaçamento criado pela tecla 'tab'. Abaixo um exemplo de criação de função:
+    def imprimir():
+        print('-'*50)
+O código escrito acima segue a regra apresentada, tem a palavra reservada 'def', o nome(imprimir), o par de parênteses, 
+e por fim os dois pontos ':'. A função de exemplo contém apenas um comando que é a impressão de um carácter multiplicado 
+50 vezes. Uma função deve conter ao menos uma linha de código mas não há limites máximos de comandos. Como dito 
+anteriormente temos o recuo de 4 espaços em branco (tab) antes do comando print(), caso este espaçamento não fosse 
+respeitado a função geraria um erro, pois não teria nenhuma linha de código e o comando print() estaria fora 
+da função.
+Uma característica importante das funções são que elas não são executadas automaticamente como os códigos que vimos 
+até este módulo. Toda função para que possa ser executada deve ser chamada em outro ponto do nosso código, mas a chamada 
+deve ocorrer após a criação da função, pois se tentarmos chamar a função antes da sua definição ela não será reconhecida,
+ocasionando um erro pois o Python executa o código de maneira sequencial. A chamada de uma função deve ser através do seu 
+nome seguido por um par de parênteses '()'. A seguir exemplo de outra função seguida por uma chamada:
+    def escreve_nome():
+        print('Python')    
+    escreve_nome()
+Nas linhas do exemplo acima temos a definição de uma função(duas primeiras linhas) e também a chamada desta função (linha 3), 
+note que a chamada não possui o recuo de 4 espaços pois senão seria considerada parte da função. Outro detalhe da chamada 
+é que ela está escrita após a definição da função, conforme mencionado antes. Este código, se executado, terá como resultado 
+a impressão do carácter '=' por 50 vezes no console, diferente do primeiro exemplo, pois se executarmos o código do primeiro 
+exemplo ele não dará nenhum resultado, já que não existe a chamada para aquela função e sim apenas a sua definição. {% endcomment %}

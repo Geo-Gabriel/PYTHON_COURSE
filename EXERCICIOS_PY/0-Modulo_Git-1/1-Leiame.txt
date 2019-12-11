@@ -1,0 +1,45 @@
+Módulo 0 - Git - 1
+
+Quando iniciamos o desenvolvimento de software normalmente trabalhamos de forma isolada, sem a colaboração de mais 
+pessoas, mas tanto em empresas quanto em softwares de código é comum que mais de uma pessoa trabalhe no desenvolvimento 
+daquela solução. É comum que cada desenvolvedor trabalhe em uma parte do código ou até mesmo em uma mesma funcionalidade. 
+É muito complicado fazer a gestão manual destas alterações já que podemos ter muitos desenvolvedores em uma única equipe, 
+alterando muitas linhas de código por dia. Fica inviável e suscetivél a erro fazer a gestão destas alterações via arquivos 
+e pastas, e-mail ou até servidor de arquivos.Para solucionar estes problemas surgiram as ferramentas de controle de código 
+fonte. Dentre estas ferramentas, a que mais se destaca é o GIT. O GIT é a ferramenta de controle de código fonte mais 
+utilizada no mundo, é open source, podemos fazer o download através do endereço 'https://git-scm.com/downloads'. 
+O GIT foi desenvolvido por Linus Torvalds o mesmo criador do Linux. Esta ferramenta nos auxilia na gestão do nosso 
+código fonte como também simplifica toda a gestão de alterações dentro de uma equipe, facilitando a junção de todas as 
+alterações e resolução de conflitos nestas alterações.
+
+Neste primeiro momento iremos utilizar o GIT através de sua ferramenta de linha de comando que é adicionada ao menu de 
+contexto do Windows Explorer (botão direito do mouse dentro de uma pasta) durante a instalação. Esta ferramenta do GIT 
+é utilizada de modo cliente, para que possamos de fato utilizar o GIT teremos que ter um servidor com GIT instalado ou 
+utilizar um dos portais webs que fornecem um servidor GIT para utilizarmos como serviço. Um dos portais mais conhecidos 
+e utilizado no mundo é o www.github.com.O serviço tem opção de criação de conta gratuíta, que atenderá muito bem as 
+necessidades deste curso. Vale lembrar que GIT e GITHUB são ferramentas distintas, o GIT é a ferramenta de gestão de 
+código fonte, já o GITHUB é um portal que utiliza o GIT e nos fornece um servidor e uma interface web para que possamos 
+acompanhar nossos projetos.
+
+Primeiramente devemos criar uma conta no GITHUB, ela é gratuíta. Após a criação da conta e confirmação do seu e-mail 
+de cadastro já pode-se criar um repositório. Repositório é o local onde armazenamos um projeto ou uma parte do projeto 
+que desejamos ter um controle separado. Muito comum separarmos a camada de frontend e backend em repositórios separados. 
+Em cada repositório podemos configurar seus colaboradores, qual tipo de linguagem, descrição, privacidade, entre outras 
+opções. Para a criação de um novo repositório no GITHUB devemos, após logar em nossa conta, clicar no ícone com sinal 
+de mais (+) localizado no canto direito superior (ao lado da foto do perfil) ao clicar neste ícone, abre um menu com 
+algumas opções, dentre elas está 'New Repository'. Ao clicar nesta opção o site redireciona para a tela de criação de 
+novo repositório. Nesta tela a primeira opção é escolher um nome para o seu novo repositório, este nome deve ser único 
+para o seu usuário, mas não se preocupe que esta checagem é feita no momento em que é digitado o nome do repositório. 
+Após a escolha do nome você poderá digitar uma descrição para o repositório, se assim desejar, mas esta não é obrigatória. 
+A próxima opção é a visibilidade do repositório, ele poderá ser público (visível por todos no GITHUB) ou 
+privado (visível apenas por que você conceder permissão de acesso). A opção seguinte é quanto ao arquivo README, 
+que você tem a opção de criar neste momento, essa é uma boa prática, para auxiliar os demais usuários quanto às 
+configurações e especificidades do seu projeto. Nos dois combos abaixo ficam as seleções de modelos de gitignore 
+e de licença. A primeira, diz respeito ao arquivo de configuração do GIT que diz quais arquivos não devem ser enviados 
+ao servidor, neste nosso caso, ao GITHUB. Neste combo existem vários modelos de acordo com linguagem ou IDE, no nosso 
+caso do Python, selecionaremos o gitignore do Python, nele já estão configurados vários arquivos e pastas que são gerados 
+em tempo de execução pelo Python e não tem necessidade de serem enviados ao GITHUB, já que ao executar o projeto sempre 
+serão criados, isto evita subirmos arquivos desnecessários ao servidor. Quanto a licença, neste primeiro momento não há 
+necessidade de aprofundarmos o assunto e podemos deixar esta opção em branco. Após essas etapas podemos clicar no botão 
+'Create Repository' e então o GITHUB irá criar nosso novo repositório e redirecionar para a tela principal do repositório.
+

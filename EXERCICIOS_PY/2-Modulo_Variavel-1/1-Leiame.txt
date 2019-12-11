@@ -1,0 +1,47 @@
+Módulo 2 - Variáveis - 1
+
+Variável é como representamos um dado ou uma expressão. As variáveis são associadas a 'nomes' que são chamados de identificadores. 
+A seguir um exemplo de criação de uma variável de identificador 'cerveja' que armazena o nome de uma cerveja em formato de texto.
+    cerveja = 'Skol'
+
+A primeira parte do código 'cerveja' representa o identificador que a forma como localizamos a variável. O sinal de igual '=' é 
+conhecido como sinal de atribuição, é através deste sinal que associamos o texto 'Skol' a variável 'cerveja'. A partir deste 
+momento a variável cerveja possui o valor 'Skol', caso façamos a impressão desta variável através da função print()(vista no módulo 1) 
+o valor da variável é que será impresso e não o identificador da variável. Exemplo:
+    print(cerveja)
+    resultado: Skol
+
+Note que para imprimirmos o valor de uma variável colocamos o identificador direto na função, sem a necessidade de utilizar 
+aspas (''). Caso fosse utilizada aspas na função print() o código seria tratado como um texto pela função print() e não seria 
+reconhecido como uma variável. Veja o código a seguir:
+    print('cerveja')
+    resultado: cerveja
+
+Quando atribuímos um valor a uma variável através do sinal de atribuição estamos na verdade armazenado este valor na 
+memória do computador. O Python faz a gestão para o programador e associa ao 'nome'(identificador) da variável o endereço do 
+espaço de memória em que o dado foi armazenado. No exemplo da nossa variável 'cerveja' quando atribuímos a ela o valor 'Skol' o 
+Python acessou a memória do nosso computador, reservou um espaço em algum local da memória e salvou o dado neste local, depois 
+associou o endereço deste espaço ao identificador da variável (cerveja). No momento em que realizamos a impressão da variável 
+através da função print(), o Python acessou a memória do nosso computador e através do endereço associado a nossa variável de 
+identificador 'cerveja' localizou o dado 'Skol' e retornou este dado para a função print().
+
+Para que o Python saiba quanto de espaço deve reservar para armazenar um dado na memória do nosso computador ele identifica qual 
+tipo de dado estamos tentando atribuir a variável. Existem alguns tipos de dados que o Python identifica, neste momento veremos 
+alguns deles e suas características. A seguir uma lista inicial de alguns deles:
+    1- String(str) = texto - Identificados por estarem entre aspas simples ou duplas 
+       Exemplo de criação da variável string : 
+        marca = 'Skol'
+    2- Inteiro(int) = número inteiro = Este dado não precisa ser descrito entre aspas, é um número pertencente ao conjunto dos números
+       inteiros da matemática, que são os números positivos e negativos. Exemplo de criação de uma variável do tipo inteiro:
+        volume = 600
+    3- Ponto Flutuante(float) = número fracionado = Este dado assim como inteiro não precisa de aspas para representá-lo, ele 
+       representa um número fracionado que corresponde ao conjunto dos números racionais da matemática. O número fracionado em 
+       Python deve utilizar como separador decimal o ponto final e não a vírgula como costumamos utilizar na matemática aqui no 
+       Brasil, pois o Python utiliza como base o sistema utilizado nos EUA que utiliza o ponto final como separador decimal. Exemplo
+       de criação de uma variável float:
+        teor = 4.7
+    4- Booleana(bool) = verdadeiro ou falso = Este dado é utilizado para checar se uma condição ou uma expressão é verdadeira ou 
+       falsa, este dado é representado por sua tradução em inglês (verdadeiro=True, falso=False). Este dado é representado muitas
+       vezes por número inteiro sendo 0 para False e 1 para True, caso estes número sejam convertidos para bool. Exemplo de criação 
+       de uma variável do tipo bool.
+        alcoolico = True

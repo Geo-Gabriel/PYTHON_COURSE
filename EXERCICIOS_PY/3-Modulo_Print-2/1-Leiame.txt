@@ -1,0 +1,52 @@
+Módulo 3 - Print - 2
+
+Neste módulo daremos continuidade ao estudo da função print() estudada no módulo 1 
+juntamente com o conceito de variáveis estudada no módulo 2. No módulo 1 utilizamos 
+a função para impressão de dados fixos e no módulo 2 ela foi utilizada para impressão
+do valor das variáveis, neste módulo 3 exploraremos um pouco mais os dois conceitos.
+
+Para impressão de múltiplos dados, vimos que é possível fazê-lo com a utilização de 
+vírgulas, porém existe mais algumas maneiras de unirmos os dados em uma única instrução print().
+
+Uma opção é através da função format(). A função format() é utilizada em textos para formatar as informações 
+e apresentá-las em um formato mais compreensível para o usuário. Um exemplo de utilização da função format() com
+a utilização das variáveis do módulos 2:
+    marca = 'Skol'
+    volume = 600
+    teor = 4.7
+    print('Uma garrafa de {} de volume {}ml possui um teor de {}% '.format(marca, volume, teor))
+
+Cada conjunto de chaves '{ }' é substituído pelo dado na função format() na ordem que foram escritos. 
+No caso do exemplo, o primeiro par de chaves foi substituído pelo conteúdo da primeira variável contida na 
+função format() (marca), o segundo par de chaves '{}' foi substituído pelo conteúdo da segunda variável contida 
+na função format() (volume) e o terceiro par de chaves foi substituído pelo conteúdo da terceira variável contida
+na função format() (teor). Como foi visto no módulo 2, o que é impresso não é o nome da variável(identificador) e 
+sim o seu conteúdo. Sendo assim teremos como resultado da impressão o seguinte trecho:
+    Uma garrafa de Skol de volume 600ml possui um teor de 4.7% 
+
+Uma alternativa a função format() são as f-strings que funcionam de forma bem semelhante a função format(), porém 
+acabam sendo menos verbosas e de fácil leitura. As f-strings são caracterizadas pelo uso do caracter 'f' antes da 
+string e pelo conjunto de chaves '{}' para inserir as informações na string, conforme exemplo a seguir:
+    print(f'Uma garrafa de {marca} de volume {volume}ml possui um teor de {teor}% ')
+
+As informações podem ser adicionadas diretamente dentro das chaves, facilitando assim a leitura e manutenção do código 
+além disso o resultado será exatamente o mesmo que na função format() e utilizando menos código.
+
+Uma funcionalidade muito útil que temos no Python e que não está presente na maioria das linguagens é dar suporte a
+multiplicação de string/caracteres. É possível sinalizar para o Python quantas vezes eu quero que determinado caracter 
+ou trecho de texto se repita, tanto para impressão quanto na criação de uma variável do tipo string. Basta para isso a 
+utilização do sinal de multiplicação '*' e o número de vezes que eu quero que esta string se repita: Exemplo da 
+multiplicação de strings:
+    linha = '='*50
+    print(linha)
+    print('\n'*2)
+    print(linha)
+No exemplo acima temos a criação de uma string utilizando a multiplicação do caracter de atribuição '=' por 50 vezes, depois
+esta string é impressa no terminal através da função print(). Na terceira linha do exemplo temos a multiplicação do caracter 
+de escape mais o 'n' o que caracteriza o quebra de linha, conforme visto no módulo 1, como multiplicamos a quebra de linha 
+por 2, temos no terminal um espaçamento de duas linhas para a próxima impressão. O resultado do código de exemplo acima é:
+==================================================
+
+
+
+==================================================
