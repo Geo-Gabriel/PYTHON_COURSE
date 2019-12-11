@@ -36,13 +36,13 @@ print(lista(lista))
 
 
 
-# def lista(lista):
-#         lista = []
-#         for n in range(len(lista[0])):
-#                 dicio = {}
-#                 for i in range(len(lista)):
-#                         dicio[lista[i]] = lista[i][n]
-#                         lista.append(dicio)
-#         return lista
+def lista(lista):
+        lista = []
+        for n in range(len(lista[0])):
+                dicio = {}
+                for i in range(len(lista)):
+                        dicio[lista[i]] = lista[i][n]
+                        lista.append(dicio)
+        return lista
 
-# print(lista(lista))
+print(lista(lista))

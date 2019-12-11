@@ -26,6 +26,7 @@
 #  Observação: Use o try/filnaly para abrir e fechar os arquivos. Veja na aula 21- Exceções como é!
 
 
+
 class Cadastro:
     '''
     Esta é a classe cadastro, onde ira receber os dados do arquivo 'cadastro2.txt' e tranformar numa lista com dicionários. 
@@ -33,12 +34,37 @@ class Cadastro:
 
                              # Método para salvar os dados em um arquivo txt
 
-    def __init__(self, txt1):
+    def __init__(self):
 
-        def salvar(self, dados_clientes):
-            arq_txt = open('arquivo.txt', 'w')
-            arq_txt.write(dados_clientes)
-            arq_txt.close()
+        pass
 
-    
- 
+
+    def print(self):
+        arquivo = open('C:\Data\GitHub\PythonActivities\AULA_22\exercicios\cadastro2.txt', 'r')
+        lista = []
+        for linhas in arquivo:
+
+            linhas = linhas.strip().split(';')
+            dicio = {}
+
+            dicio['cod'] = linhas[0]
+            dicio['nome'] = linhas[1]
+            dicio['idade'] = linhas[2]
+            dicio['sexo'] = linhas[3]
+            dicio['email'] = linhas[4]
+            dicio['tel'] = linhas[5]
+
+            
+            lista.append(dicio)
+        return lista
+
+
+    def consulta (self,cliente):
+        
+        pass
+
+a = Cadastro()
+
+b = a.print()
+
+print(b)
