@@ -28,11 +28,6 @@
 
 
 class Cadastro:
-    '''
-    Esta é a classe cadastro, onde ira receber os dados do arquivo 'cadastro2.txt' e tranformar numa lista com dicionários. 
-    '''
-
-                             # Método para salvar os dados em um arquivo txt
 
     def __init__(self):
 
