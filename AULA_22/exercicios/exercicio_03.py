@@ -30,36 +30,85 @@
 class Cadastro:
 
     def __init__(self):
-
+        self.lista = []
+        # self.ler()
         pass
 
 
-    def print(self):
-        arquivo = open('C:\Data\GitHub\PythonActivities\AULA_22\exercicios\cadastro2.txt', 'r')
-        lista = []
-        for linhas in arquivo:
-
-            linhas = linhas.strip().split(';')
-            dicio = {}
-
-            dicio['cod'] = linhas[0]
-            dicio['nome'] = linhas[1]
-            dicio['idade'] = linhas[2]
-            dicio['sexo'] = linhas[3]
-            dicio['email'] = linhas[4]
-            dicio['tel'] = linhas[5]
-
+    def ler(self):
+        try:
+            arquivo = open('C:\Data\GitHub\PythonActivities\AULA_22\exercicios\cadastro2.txt', 'r')
             
-            lista.append(dicio)
-        return lista
 
+            for pessoa in arquivo:
 
-    def consulta (self,cliente):
+                pessoa = pessoa.strip().split(';') #  --> 6;Waldir;34;f;nandah.s2@bol.com.br;058903756441  <--
+               
+                dicio = {}
+
+                dicio['cod'] = pessoa[0]
+                dicio['nome'] = pessoa[1]
+                dicio['idade'] = pessoa[2]
+                dicio['sexo'] = pessoa[3]
+                dicio['email'] = pessoa[4]
+                dicio['tel'] = pessoa[5]
+            
+            self.lista.append(dicio)
         
-        pass
+        finally:
+            arquivo.close()
+
+
+    def salvar (self):
+        try:
+            arquivo = open('C:\Data\GitHub\PythonActivities\AULA_22\exercicios\cadastro2.txt', 'a')
+            for pessoa in self.lista:
+                texto = f"{pessoa['cod']};{pessoa['nome']};{pessoa['idade']};{pessoa['sexo']};{pessoa['email']};{pessoa['tel']}"
+                arquivo.write(texto)
+        finally:
+            arquivo.close()
+
+    def cadastrar (self):
+        nome = input('Digite o nome do cliente: ')
+        idade = int(input('Digite a idade do cliente: '))
+        sexo = input('Digite o sexo: ')
+        email = input('Digite o email: ')
+        telefone = input('Digite o telefone: ')
+
+        codigo = str (int(self.lista[-1]['cod']) +1 )
+
+        dic = {'cod': codigo, 'nome': nome, 'idade': idade, 'sexo': sexo, 'email': email, 'tel': telefone}
+        self.lista.append(dic) 
+
+    def consulta (self,codigo):
+
+        for pessoa in self.lista:
+            if int(pessoa['cod']) == codigo:
+                print(f'''
+                Cod: {pessoa['cod']}
+                Nome: {pessoa['nome']}
+                Idade: {pessoa['idade']}
+                Sexo: {pessoa['sexo']}
+                Email: {pessoa['email']}
+                Telefone: {pessoa['tel']}
+                ''')
+                break
+
+    def atualizar (self,codigo):
+        for pessoa in self.lista:
+            if int(pessoa['cod']) == codigo:
+                nome = input('Digite o nome do cliente: ')
+                idade = int(input('Digite a idade do cliente: '))
+                sexo = input('Digite o sexo: ')
+                email = input('Digite o email: ')
+                telefone = input('Digite o telefone: ')
+                # ATUALIZA OS DADOS:
+                pessoa['nome'] = nome
+                pessoa['idade'] = idade
+                pessoa['sexo'] = sexo
+                pessoa['email'] = email
+                pessoa['tel'] = telefone
 
 a = Cadastro()
 
-b = a.print()
-
-print(b)
+print(a.ler())
