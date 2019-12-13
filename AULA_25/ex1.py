@@ -75,9 +75,9 @@ class Cliente:
 
     def dinheiro(self,valor):
         '''
-        Este metodo serve para adicionar/remover valor em R$ para o atributo saldo para 
+        Este metodo serve para adicionar/remover valor em R$ para o atributo saldo, para 
         o cliente.
-        Esta função revebe o valor como parametro. Se o valor for positivo, o saldo
+        Esta função recebe o valor como parametro. Se o valor for positivo, o saldo
         aumenta, se o valor for negativo o saldo diminui. 
         
         O cliente não pode ter seu saldo menor que o crédito. Então se o valor exceder
@@ -89,6 +89,20 @@ class Cliente:
         Se o cliente_devedor estiver True e o cliente depositar dinheiro suficiente para
         o saldo ficar maior ou igual a 0 o cliente_devedor deve ser alterado para False.
         '''
+        self.saldo = float(input('Digite seu saldo atual do  cliente: '))
+        if self.saldo >= self.valor:
+            self.saldo = self.saldo - self.valor
+        elif self.saldo <= self.valor:0
+            self.saldo = self.saldo - self.valor
+            try:
+                pass
+        else:
+            if self.saldo < self.credito:
+                self.cliente_devedor == False
+                print('O peração CANCELADA')
+
+            
+
         pass
 
     def __eq__(self,valor):
