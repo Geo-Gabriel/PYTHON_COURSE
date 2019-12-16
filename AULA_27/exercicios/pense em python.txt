@@ -1,0 +1,89 @@
+
+
+
+
+Exercício 10.Escreva uma função chamada middle que receba uma lista e retorne uma nova lista
+com todos os elementos originais, exceto os primeiros e os últimos elementos. Por
+exemplo:
+>>> t = [1, 2, 3, 4]
+>>> middle(t)
+[2, 3]
+
+
+Exercício 10.4
+Escreva uma função chamada chop que tome uma lista alterando-a para remover o
+primeiro e o último elementos, e retorne None. Por exemplo:
+>>> t = [1, 2, 3, 4]
+>>> chop(t)
+>>> t
+[2, 3]
+
+
+Exercício 10.5
+Escreva uma função chamada is_sorted que tome uma lista como parâmetro e retorne
+True se a lista estiver classificada em ordem ascendente, e False se não for o caso. Por
+exemplo:
+>>> is_sorted([1, 2, 2])
+True
+>>> is_sorted(['b', 'a'])
+False
+
+
+Exercício 10.6
+Duas palavras são anagramas se você puder soletrar uma rearranjando as letras da
+outra. Escreva uma função chamada is_anagram que tome duas strings e retorne True
+se forem anagramas.
+
+Exercício 10.7
+Escreva uma função chamada has_duplicates que tome uma lista e retorne True se
+houver algum elemento que apareça mais de uma vez. Ela não deve modificar a lista
+original.
+
+Exercício 10.8
+Este exercício pertence ao assim chamado Paradoxo de aniversário, sobre o qual você
+pode ler em http://en.wikipedia.org/wiki/Birthday_paradox.
+Se há 23 alunos na sua sala, quais são as chances de dois deles fazerem aniversário no
+mesmo dia? Você pode estimar esta probabilidade gerando amostras aleatórias de 23dias de aniversário e verificando as correspondências. Dica: você pode gerar
+aniversários aleatórios com a função randint no módulo random.
+Se quiser, você pode baixar minha solução em http://thinkpython2.com/code
+birthday.py.
+
+Exercício 10.9
+Escreva uma função que leia o arquivo words.txt e construa uma lista com um
+elemento por palavra. Escreva duas versões desta função, uma usando o método
+append e outra usando a expressão t = t + [x]. Qual leva mais tempo para ser
+executada? Por quê?
+Solução: http://thinkpython2.com/code/wordlist.py.
+
+Exercício 10.10
+Para verificar se uma palavra está na lista de palavras, você pode usar o operador in,
+mas isso seria lento porque pesquisaria as palavras em ordem.
+Como as palavras estão em ordem alfabética, podemos acelerar as coisas com uma
+busca por bisseção (também conhecida como pesquisa binária), que é semelhante ao
+que você faz quando procura uma palavra no dicionário. Você começa no meio e
+verifica se a palavra que está procurando vem antes da palavra no meio da lista. Se for
+o caso, procura na primeira metade da lista. Se não, procura na segunda metade.
+De qualquer forma, você corta o espaço de busca restante pela metade. Se a lista de
+palavras tiver 113.809 palavras, o programa seguirá uns 17 passos para encontrar a
+palavra ou concluir que não está lá.
+Escreva uma função chamada in_bisect que receba uma lista ordenada, um valor-alvo
+e devolva o índice do valor na lista se ele estiver lá, ou None se não estiver.
+Ou você pode ler a documentação do módulo bisect e usá-lo!
+Solução: http://thinkpython2.com/code/inlist.py.
+
+Exercício 10.11
+Duas palavras são um “par inverso” se uma for o contrário da outra. Escreva um
+programa que encontre todos os pares inversos na lista de palavras.
+Solução: http://thinkpython2.com/code/reverse_pair.py.
+
+Exercício 10.12
+Duas palavras “interligam-se” quando, ao tomarmos letras alternadas de cada uma,
+formamos uma palavra nova. Por exemplo, “shoe” e “cold” interligam-se para formar
+“schooled”.Solução: http://thinkpython2.com/code/interlock.py. Crédito: este exercício foi
+inspirado por um exemplo em http://puzzlers.org.
+Escreva um programa que encontre todos os pares de palavras que se
+interligam. Dica: não enumere todos os pares!
+Você pode encontrar palavras que sejam interligadas de três em três; isto é,
+cada terceira letra forma uma palavra, começando da primeira, segunda ou
+terceira? 
+  
