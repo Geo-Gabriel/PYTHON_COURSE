@@ -10,6 +10,10 @@ VALUES (3,'Pedro',15,'Mas');
 SELECT id, nome, idade, sexo
 FROM topskills01.Morgana;
 
+-- FILTRANDO VALORES DE UMA TABELA COM COMANDO (LIKE) ---------------------
+
+SELECT * FROM topskills01.Morgana 
+
 -- ATUALIZAR VALORES DE UMA TABELA ----------------------------------------
 
 UPDATE topskills01.Morgana
