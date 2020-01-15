@@ -1,0 +1,4 @@
+21;Marciano;Pazz;32;0 
+22;Gabriel;Coee;20;1 
+23;Matheus;Kais;16;2 
+24;Jessica;Silva;31;1 
