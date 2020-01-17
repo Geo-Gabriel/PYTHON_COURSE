@@ -2,13 +2,13 @@
 
 
 # FOR SIMPLES USANDO RANGE NO INTERVALO DE 0 A 10 COM INCREMENTO DE UM
-# for i in range (0,10):
-#     print(f'{i} - LOVE U')
+for i in range (0,10):
+    print(f'{i} - LOVE U')
 
 # FOR SIMPLES UTILIZANDO RANGE NO INTERVALO DE 0 A 10 COM INCREMENTO DE 2
 
-# for a in range (0,10,2):
-#     print(f'{a} - TESTE')
+for a in range (0,10,2):
+    print(f'{a} - TESTE')
 
 
 # O MELHOR A SE UTILIAR EM UMA LISTA NÁO É O FOR COMO RANGE E SIM O FOR IT 
@@ -16,8 +16,8 @@
 
 lista = ['george', 'gabriel', 'pereira', 'da']
 
-# for nomes in lista:
-#     print(nomes)
+for nomes in lista:
+    print(nomes)
 
 lista.append('silva')
 
