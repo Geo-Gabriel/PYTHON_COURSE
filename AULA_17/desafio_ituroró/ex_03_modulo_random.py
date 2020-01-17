@@ -2,6 +2,8 @@
 # se vc acertou ou não, o número digitado é maior ou menor, quando acertar o 
 # o programa deve ser finalizado
 
+# EXERCICIO UTILIZANDO MODULO RANDOM 
+
 from random import randint
 
 n = randint(1,10)
