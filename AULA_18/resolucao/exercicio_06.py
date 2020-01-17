@@ -7,6 +7,17 @@
 # cada linha possui os dados na seguinte posição: 
 # codigo, nome, sexo, idade
 
+def ler_cadastro():
+   arquivo = open('18-Aula18/exercicios/cadastro.txt','r')
+   lista = []
+   for pessoas in arquivo:
+      pessoas = pessoas.strip().split(';')
+      dicionario = {'codigo':pessoas[0], 'nome':pessoas[1], 
+                    'sexo':pessoas[2], 'idade':pessoas[3]}
+      lista.append(dicionario)
+   arquivo.close()
+   return lista
+
 # 2 - Como a entrada da festa é mais barata para mulheres 
 # (R$ 15,00) do que para os homens 
 # (R$ 35,00) 
@@ -19,17 +30,6 @@
 # o valor do ingresso, e em caso de menores de idade apareça o
 #  texto "Entrada Proibida!"
 
-
-def ler_cadastro():
-   arquivo = open('18-Aula18/exercicios/cadastro.txt','r')
-   lista = []
-   for pessoas in arquivo:
-      pessoas = pessoas.strip().split(';')
-      dicionario = {'codigo':pessoas[0], 'nome':pessoas[1], 
-                    'sexo':pessoas[2], 'idade':pessoas[3]}
-      lista.append(dicionario)
-   arquivo.close()
-   return lista
 
 def lista_festa(lista_de_entradas):
    lista_homens = []
