@@ -19,9 +19,7 @@ print(f'Soma: {soma(a,b)}\nSubtração: {subtracao(a,b)}\nDivisao: {divisao(a,b)
 
 #print(f'Soma: {resul_soma}\nSubtração: {resul_sub}\nProduto: {resul_produto}\nDivisão Inteira: {resul_divisao_inteira}\nDivisao Fracionada: {resul_divisao_fracionada}\nResto Divisao: {resul_resto_divisao}\nRaiz dos numeros: {resul_raiz}')
 
-
-
-
+# -------------------------------------------- Métodos --------------------------------------
 
 # def soma (a,b):
 #     soma_n = a + b
