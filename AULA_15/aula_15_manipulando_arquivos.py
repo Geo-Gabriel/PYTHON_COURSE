@@ -1,5 +1,6 @@
 # Aula 15 -- 28-11-2019
-# manipulação de arquivos
+#
+# Manipulação de arquivos
 
 
 def salvar_pessoa (pessoa_dicio):
@@ -19,6 +20,8 @@ def ler ():
     arq.close()
     return lista
 
+for pessoas in ler():
+    print(f"{pessoas['nome']} - {pessoas['sobrenome']} - {pessoas ['idade']}")
 
 # nome = input('Digite nome: ')
 # sobrenome = input('Digite sobrenome: ')
@@ -27,8 +30,3 @@ def ler ():
 # pessoa = {'nome': nome, 'sobrenome': sobrenome, 'idade': idade} #f'{nome};{sobrenome};{idade}'
 
 # salvar_pessoa(pessoa)
-
-
-for pessoas in ler():
-    print(f"{pessoas['nome']} - {pessoas['sobrenome']} - {pessoas ['idade']}")
-    

@@ -1,4 +1,4 @@
-# nome marca teor tipo cerveja
+# NOME //  MARCA //  TEOR //  TIPO // CERVEJA
 
 
 def save_beer(cerveja_dicio):
@@ -17,6 +17,9 @@ def ler_cerveja():
     arq.close()
     return lista_beer
 
+lista = ler_cerveja()
+for p in ler_cerveja():
+    print(f"{p['nome']} - {p['marca']} - {p['teor']} - {p['tipo']}")
 
 # nome_beer = input('Digite nome da cerveja: ')
 # marca = input('Digite a marca: ')
@@ -25,7 +28,3 @@ def ler_cerveja():
 # cerveja = {'nome': nome_beer, 'marca': marca, 'teor': teor_alc, 'tipo': tipo}
 
 # save_beer(cerveja)
-
-lista = ler_cerveja()
-for p in ler_cerveja():
-    print(f"{p['nome']} - {p['marca']} - {p['teor']} - {p['tipo']}")
