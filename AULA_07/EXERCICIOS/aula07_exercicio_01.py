@@ -14,7 +14,7 @@ print(f'A marca é: {inf_cerveja["marca"]}\nO tipo é: {inf_cerveja["tipo"]}\nO 
 print('=-='*15)
 
 
-# ALTERNATIVA
+# ALTERNATIVA I
 
 # -- Criar variáveis e depois inserir estas variáveis no dicionário ['chave': (variavel criada)]
 
@@ -22,3 +22,4 @@ print('=-='*15)
 
 # -- Criar um dicionário vazio depois criar chaves com valores definidos pelo INPUT. Estas chaves criadas serão adicionadas
 # -- ao dicionário. 
+

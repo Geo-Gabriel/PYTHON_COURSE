@@ -1,10 +1,10 @@
 # EXERCICIO 02 - DICIONARIOS
+
 # Escreva um programa que leia os dados de 11 jogadores
 # Jogador: Nome, Posicao, Numero, pernaboa
 # Crie um dicionario para armazenar os dados
 # imprima os dados do dicionario (n dicionario completo)
 # Imprima todos os jogadores e seus dados
-
 
 
 lista_jogadores = list()
