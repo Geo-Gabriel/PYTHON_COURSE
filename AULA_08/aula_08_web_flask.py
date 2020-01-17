@@ -1,5 +1,6 @@
 # aula 8  -- 18-11-2019
-# WEB
+
+# WEB -- Desenvolvimento WEB com Flask
 
 from flask import Flask
 

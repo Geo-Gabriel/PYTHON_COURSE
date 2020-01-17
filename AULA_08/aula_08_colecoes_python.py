@@ -1,5 +1,7 @@
 # Aula 08 - 18-11-2019
-# TUPLAS
+
+# TIPOS DE COLEÇÕES EM PYTHON
+# --- DICIONÁRIOS -- TUPLAS - LISTAS
 
 numeros = [1,4,6]
 usuario = {'nome':'user','password':123456}
