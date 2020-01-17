@@ -1,3 +1,5 @@
+# -- IMPORTANDO A BIBLIOTECA .MATH
+
 import math
 
 degrees = 45
