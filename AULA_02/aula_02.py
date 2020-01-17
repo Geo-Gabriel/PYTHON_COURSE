@@ -1,10 +1,12 @@
 # PROGRAMA DE BOAS VINDAS
+
 print('='*30)
 print('Questionário sobre o crime')
 print('='*30)
 print()
 print('Digite 01 para afirmativa ou 0 para negativa')
 print()
+
 p1 = int(input('Telefonou para a vítima?: ')) 
 p2 = int(input('Esteve no local do crime?: ')) 
 p3 = int(input('Telefonou para a vítima?: ')) 
