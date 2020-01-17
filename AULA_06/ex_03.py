@@ -1,11 +1,12 @@
-#--- Exercício 3 - Foreach
+#--- Exercício 3 - For each
 #--- Escreva programa que leia as notas (4) de 10 alunos
 #--- Armazene as notas e os nomes em listas
 #--- Imprima:
 #           1- O nome dos alunos 
 #           2- Média do aluno
-#           3- Resuldo (Aprovado>=7.0)
+#           3- Resultado (Aprovado>=7.0)
 
+# ------------------------------ MÉTODO QUE EU FIZ ---------------------------------------------
 
 '''lista_alunos = []
 lista_notas = []
@@ -37,6 +38,8 @@ print(lista_alunos)
 print(lista_notas)
 print(lista_medias)'''
 
+# ------------------------------- MÉTODO COM AJUDA DO PROF(GUERRA) -------------------------------------
+
 alunos = []
 notas = []
 
@@ -63,3 +66,5 @@ for nomes in alunos:
     b += 4
     c += 4
     d += 4
+    
+# -----------------------------------------------------------------------------------------------------

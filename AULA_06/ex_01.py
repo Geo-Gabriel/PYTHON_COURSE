@@ -10,3 +10,6 @@ for nomes in range(0,10):
     lista_alunos.append(x)
 
 print(lista_alunos)
+
+
+
