@@ -4,15 +4,15 @@
 bole = True
 n = 0 
 
-# while False:
-#     n = n + 1
-#     print(f'Hello mundo - {n}')
+while False:
+    n = n + 1
+    print(f'Hello mundo - {n}')
 
-# while n <= 30:
-#     n = n + 1
-#     print(f'Hello mundo - {n}')
-#     break
-#     print('Passou!!')
+while n <= 30:
+    n = n + 1
+    print(f'Hello mundo - {n}')
+    break
+    print('Passou!!')
 
 while n <= 30:
     n = n + 1
