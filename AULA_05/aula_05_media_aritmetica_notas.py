@@ -1,3 +1,5 @@
+# AULA 05 -- MÉDIA ARITMÉTICA DAS NOTAS
+
 
 n1 = float(input('Digite a primeira nota do aluno: '))
 n2 = float(input('Digite a primeira nota do aluno: '))
