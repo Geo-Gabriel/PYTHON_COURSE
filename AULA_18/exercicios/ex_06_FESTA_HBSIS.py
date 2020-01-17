@@ -53,3 +53,4 @@ def consulta(lista_consulta_funcao, numero):
                     print(f"Nome: {lista_consulta['nome']} valor ingressp 35 R$")
             else:
                 print('Não pode entrar')
+                
