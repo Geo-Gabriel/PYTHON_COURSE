@@ -1,3 +1,4 @@
+
 class Pessoa:  #--- Criação da classe (Pessoa)
      '''Classe para utilização no banco de dados'''
     id = 0    #-- Aqui vai os elementos da classe
