@@ -1,7 +1,5 @@
 import MySQLdb
 
-
-
 def ler_dados():
     arq = open('C:\\Users\\900139\\Desktop\\GIT\\PYTHON_COURSE\\AULA_33\\dados_pessoas_2.txt','r', encoding="utf-8")
     lista = []
