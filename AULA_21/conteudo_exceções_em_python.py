@@ -186,6 +186,7 @@ try:
     print(f'você digitou o número {inteiro2}')
     print(f'{inteiro}/{inteiro2} = {inteiro/inteiro2}')
     #break
+    
 except (ValueError,NameError,ZeroDivisionError) as erro1:
     salvar_erro = erro1
     print('#### há algo errado ####\n\n',erro1,'\n\n')
