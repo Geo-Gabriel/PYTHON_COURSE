@@ -5,11 +5,6 @@
 # 3) Como a pessoa está agora? 
 
 
-
-
-
-
-
 #(atributos, metodos, atributos estado)
 
 class Pessoa:
