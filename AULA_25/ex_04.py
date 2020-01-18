@@ -1,43 +1,42 @@
 # Aula 21 - 12-12-2019
-# 
-# Cadastro de cliente.
+# Cadastro do produto.
 
-# Crie uma classe para cadastrar cliente. 
-# Para guardar os clientes cadastrado, utilize a classe feita no
-# exercicio1.py importando ela.
+# Crie uma classe para o cadastro do produto, ler e gravar em arquivo .txt,
+# atualizar produtos, e pesquisa pelo código de produto. (use como base a classe 
+# cadastrar cliente)
 
-# Como atributo, utilize uma lista vazia para guardar os clientes.
+# Para guardar os produtos importe a classe do exercicio 3 e atribua numa lista.
 
-class CadastroCliente:
+
+class CadastroProduto:
     def __init__(self):
         pass
 
     def ler_arquivo(self,nome_arquivo):
         '''
         Este metodo serve para ler um arquivo .txt que deve possuir os 
-        dados de clientes cadastrados.
+        dados dos produtos cadastrados.
         Vai receber como parametro o nome do arquivo (nome_arquivo) a ser 
         lido.
-        Os dados lidos devem ser atribuidos a classe pessoa.
+        Os dados lidos devem ser atribuidos a classe produto.
         '''
         pass
 
-    def cadastro_cliente(self):
+    def cadastro_produto(self):
         '''
-        Este metodo é utilizado para cadastrar um cliente.
-        Os dados devem ser aplicados em uma classe pessoa.
-        O codigo cliente não pode se repetir e deve estar na sequencia númerica
-        (novos clientes recebem os ultimos numeros)
+        Este metodo é utilizado para cadastrar um produto.
+        Os dados devem ser aplicados em uma classe produto.
+        O codigo produto não pode se repetir e deve estar na sequencia númerica
         Neste caso se faz necessário adicionar linha no arquivo de texto com o metodo
-        gravar adicionando os novos clientes (use o atributo 'a')
+        gravar adicionando os novos produtos (use o atributo 'a')
         '''
         pass
 
     def pesquisa_codigo(self,codigo):
         '''
-        Neste metodo é feito a pesquisa do cliente, mostrando os 
+        Neste metodo é feito a pesquisa do produto, mostrando os 
         dados do mesmo.
-        No caso perguntará se vai querer alterar os dados do cliente.
+        No caso perguntará se vai querer alterar os dados.
         Se sim, altere e encaminhe para o metodo gravar.
         Lembrando que no caso de alteração, será necessário fazer a gravação de
         todos os dados usando o atributo 'w'.
@@ -46,9 +45,10 @@ class CadastroCliente:
 
     def gravar(self,nome_arquivo,atributo):
         '''
-        Este é responsável por gravar os dados dos clientes.
+        Este é responsável por gravar os dados.
         use o atributo 'w' para sobrescrever o arquivo e o
         atributo 'a' para adicionar linha.
         o parametro nome_arquivo é o nome do arquivo em que se deseja gravar.
         '''
         pass
+    

@@ -51,3 +51,4 @@ class Produto:
         Use f-string para interpolar o texto com as variáveis
         '''
         pass
+    
