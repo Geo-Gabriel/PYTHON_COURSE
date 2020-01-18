@@ -7,3 +7,4 @@ pessoa_c = PessoaController()
 
 for p in pessoa_c.listar_todos():
     print(p)
+    

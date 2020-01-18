@@ -11,3 +11,4 @@ class PessoaController:
     def exportar (self):
         listar_pessoa_controller = self.p_db.listar_todos()
         return self.people.exportar_arq(listar_pessoa_controller)
+    

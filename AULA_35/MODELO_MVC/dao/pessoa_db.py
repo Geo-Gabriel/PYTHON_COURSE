@@ -39,3 +39,4 @@ class PessoaDb:
             lista_pessoas.append(p1)
             
         return lista_pessoas #-- Aqui retorna a lista que contém o dicionario com os dados
+    
