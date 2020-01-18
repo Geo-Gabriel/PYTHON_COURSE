@@ -11,11 +11,6 @@ from geradorlista import embaralhar_int_str_hard
 from geradorlista import binario
 
 
-
-
-
-
-
 # Exercícios baseados do livro Pense em Python.
 
 # 1) Escreva uma função chamada nested_sum que receba a lista de listas de números

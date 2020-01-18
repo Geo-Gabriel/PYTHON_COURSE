@@ -56,3 +56,4 @@ print('Numero de listas iguais: ',iguais)
 print(dic_ig,'\n')
 for i in dic_ig:
     print(f'{i} : {dic_ig[i]}') 
+    
