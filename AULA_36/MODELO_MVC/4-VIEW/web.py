@@ -30,4 +30,3 @@ print(vazio(rua))
 # -- If ternário em python
 
 print(rua if rua else '')
-

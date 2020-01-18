@@ -56,4 +56,3 @@ class PessoaDao:
     def deletar (self, pessoa:Pessoa):
         pass
     
-    

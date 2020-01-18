@@ -8,3 +8,5 @@ class Endereco:
     bairro = ''
     cidade = ''
     cep =''
+    
+    
