@@ -1,4 +1,4 @@
-from classe2 import *
+from resolucao.classe_festa_hbsis import *
 
 
 festa = FestaHBSIS()
