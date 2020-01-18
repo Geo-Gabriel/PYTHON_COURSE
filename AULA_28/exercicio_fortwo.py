@@ -21,8 +21,6 @@
 # 5 - Deve ser feito em Python
 
 
-
-
 # ----------------------------------------  DEFINIÇÃO DAS LISTAS E VARIÁVEIS  --------------------------------------------------
     #-- LISTAS
 tripulantes = [] 
