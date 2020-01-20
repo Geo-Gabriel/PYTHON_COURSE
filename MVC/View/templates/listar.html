@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{titulo_app}} - Listar</title>
+    <link rel="stylesheet" href="../static/estilo.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>PessoaId</th>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
+                <th>EnderecoId</th>
+                <th>Logradouro</th>
+                <th>Numero</th>
+                <th>Complemento</th>
+                <th>Bairrro</th>
+                <th>Cidade</th>
+                <th>Cep</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in lista %}
+            <tr>
+                <td>{{ p[0] }}</td>
+                <td>{{ p[1] }}</td>
+                <td>{{ p[2] }}</td>
+                <td>{{ p[3] }}</td>
+                <td>{{ p[4] if p[4] else '' }}</td>
+                <td>{{ p[6] if p[6] else '' }}</td>
+                <td>{{ p[7] if p[7] else '' }}</td>
+                <td>{{ p[8] if p[8] else '' }}</td>
+                <td>{{ p[9] if p[9] else '' }}</td>
+                <td>{{ p[10] if p[10] else '' }}</td>
+                <td>{{ p[11] if p[11] else '' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

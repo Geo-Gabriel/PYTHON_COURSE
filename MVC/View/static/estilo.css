@@ -1,0 +1,9 @@
+body{
+    background: #00f;
+    color:#fff;
+}
+table{
+    width: 70%;
+    margin: 10em auto;
+    border: 3px solid #f00;
+}
