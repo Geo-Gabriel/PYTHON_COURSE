@@ -2,7 +2,7 @@ import MySQLdb
 from Model.endereco import Endereco
 
 class EnderecoDao:
-    conexao = MySQLdb.connect(host='localhost', database='aulabd', user='root', passwd='')
+    conexao = MySQLdb.connect(host='localhost', database='aulabd', user='root', passwd='root123')
     cursor = conexao.cursor()
 
     def listar_todos(self):
