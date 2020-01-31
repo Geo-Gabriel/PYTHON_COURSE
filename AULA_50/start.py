@@ -8,7 +8,7 @@ criar uma aplicação flask que tenha os 4 metodos HTTP, quando chamados retorne
 
 from flask import  Flask
 from flask_restful import Api
-from AULA_41.controller.pessoa_controller import PessoaController
+from AULA_50.controller.pessoa_controller import PessoaController
 
 app = Flask(__name__)
 
