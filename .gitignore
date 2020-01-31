@@ -85,6 +85,7 @@ celerybeat-schedule
 .env
 .venv
 env/
+venv_aula_41/
 venv/
 ENV/
 env.bak/
@@ -102,3 +103,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/AULA_41/venv_aula_41/

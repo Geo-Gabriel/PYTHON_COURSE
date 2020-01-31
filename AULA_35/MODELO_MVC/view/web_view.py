@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import sys
 sys.path.append('')
-from controller.pessoa_controller import PessoaController
+from AULA_41.controller.pessoa_controller import PessoaController
 
 app = Flask(__name__)
 

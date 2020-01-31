@@ -6,9 +6,9 @@ para achar o endereço python
 criar uma aplicação flask que tenha os 4 metodos HTTP, quando chamados retorne uma string a classe controller e a rota dece ser 'pessoa'.
 '''
 
-from flask import  Flask, render_template
+from flask import  Flask
 from flask_restful import  Api
-from AULA_41.venv_aula_41.controller.pessoa_controller import PessoaController
+from AULA_41.controller.pessoa_controller import PessoaController
 p_c = PessoaController()
 
 app = Flask(__name__)
