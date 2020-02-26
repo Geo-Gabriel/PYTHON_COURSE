@@ -36,3 +36,24 @@
 #     A = [1, 2, 3, 4]
 #     K = 4
 # a função deve retornar [1, 2, 3, 4]
+
+
+
+# ----------- Resolution -------------
+
+
+def matrix_rotation(matrix, k):
+    for times in range(k):
+        a = matrix[-1]
+        matrix.remove(a)
+        matrix.insert(0, a)
+    return matrix
+
+
+matrix_a = [1,2,3,4,5]
+print(matrix_rotation(matrix_a, 3))
+# Result: [3, 4, 5, 1, 2]
+
+matrix_b = [1,2,3,4]
+print(matrix_rotation(matrix_b, 1))
+# Result: [4, 1, 2, 3]
